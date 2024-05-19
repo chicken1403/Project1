@@ -3,6 +3,8 @@ import { useState } from "react";
 import bkgImg from "../../assets/hero-wallpaper.jpg";
 import Img from "../../assets/code9.png";
 import pfp from "../../assets/pfp.jpg";
+import manas from "../../assets/manas.png";
+import rahul from "../../assets/rahul.png";
 import Navbar from "../Header/Navbar";
 import LoggingPopupLayout from "../Auth/SigninLayout";
 import Calendar from "./calendar.jsx";
@@ -83,44 +85,44 @@ const Hero = () => {
           </div>
         </div>
 
-        <div>
-          <div className="container marketing relative mt-[100px]">
+        <div className="bg-black mt-[10px] p-3">
+          <div className="container marketing relative">
             <div className="row">
-              <div className="col-lg-4">
+              <div className="col-lg-4 p-4">
                 <img
-                  src={pfp}
+                  src={manas}
                   className="bd-placeholder-img rounded-circle w-[140px] h-[140px] ml-[155px]"
                 ></img>
-                <h2 className="fw-normal m-3 text-white">Heading</h2>
-                <p className="text-white">
-                  Some representative placeholder content for the three columns
-                  of text below the carousel. This is the first column.
-                </p>
+                <h2 className="fw-normal m-3 text-white">Manas Kumar Sinha</h2>
+                <p className="text-white">IIT Guwahati CSE 26</p>
+                <p className="text-white">Bolo Tararara</p>
                 <p>
-                  <a className="btn btn-primary mt-[25px] mb-[25px]" href="#">
-                    View details &raquo;
-                  </a>
+                  <Link to="https://www.linkedin.com/in/manas-sinha-b4454324b/">
+                    <button className="btn btn-primary m-3 w-64">
+                      View Details
+                    </button>
+                  </Link>
                 </p>
               </div>
 
-              <div className="col-lg-4">
+              <div className="col-lg-4 p-4">
                 <img
-                  src={pfp}
-                  className="bd-placeholder-img rounded-circle w-[140px] h-[140px] ml-[155px]"
+                  src={rahul}
+                  className="bd-placeholder-img rounded-circle w-[140px] h-[140px] ml-[155px] "
                 ></img>
-                <h2 className="fw-normal m-3 text-white">Heading</h2>
-                <p className="text-white">
-                  Some representative placeholder content for the three columns
-                  of text below the carousel. This is the first column.
-                </p>
+                <h2 className="fw-normal m-3 text-white">Rahul Singh</h2>
+                <p className="text-white">IIT Guwahati Mech 26</p>
+                <p className="text-white">Bolo Tararara</p>
                 <p>
-                  <a className="btn btn-primary mt-[25px] mb-[25px]" href="#">
-                    View details &raquo;
-                  </a>
+                  <Link to="https://www.linkedin.com/in/rahul-singh-7a5a62257/">
+                    <button className="btn btn-primary m-3 w-64">
+                      View Details
+                    </button>
+                  </Link>
                 </p>
               </div>
 
-              <div className="col-lg-4">
+              <div className="col-lg-4 p-4">
                 <img
                   src={pfp}
                   className="bd-placeholder-img rounded-circle w-[140px] h-[140px] ml-[155px]"
