@@ -1,0 +1,157 @@
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import bkgImg from "../../assets/hero-wallpaper.jpg";
+import Img from "../../assets/code9.png";
+import pfp from "../../assets/pfp.jpg";
+import Navbar from "../Header/Navbar";
+import LoggingPopupLayout from "../Auth/SigninLayout";
+
+const Hero = () => {
+  // State for popup
+  const [popup, setpopup] = useState(false);
+
+  return (
+    <>
+      <Navbar pagination={false} setpopup={setpopup} />
+      <div className="bg-[#1f2420]">
+        <div
+          className="hero w-screen h-screen px-0"
+          style={{
+            backgroundImage: `url(${Img})`,
+            placeItems: screenLeft,
+          }}
+        >
+          <div className="hero-overlay  z-0 "></div>
+          <div
+            className="hero-content text-center text-neutral-content z-0 absolute top-16 "
+            style={{ alignItems: screenLeft, textAlign: screenLeft }}
+          >
+            <div className="max-w-md">
+              <h1 className="mb-5 text-6xl font-bold text-blue-400 ">
+                Become a True Programming Master
+              </h1>
+              <p className="mt-48 ">
+                Elite Code is the best platform to help you enhance your skills,
+                expand your knowledge and prepare for technical interviews.
+              </p>
+
+              <Link to="/ProblemSet">
+                <button
+                  className="btn btn-primary mt-3"
+                  // onClick={() => {
+                  //   setpopup((prevState) => !prevState);
+                  // }}
+                >
+                  Start Coding
+                </button>
+              </Link>
+
+              {/* {youtubePlayer.isOpen && (<signin/>)} */}
+            </div>
+          </div>
+        </div>
+
+        <div className="flex p-4 m-2 relative">
+          <div className="p-2">
+            <div className="card" style={{ width: "25rem", height: "150px" }}>
+              <img src={pfp} className="card-img-top" alt="..." />
+              <div className="card-body bg-black text-left">
+                <h5 className="card-title text-white">User Profile</h5>
+                <a
+                  className="card-text text-white"
+                  href="https://codeforces.com/blog/entry/91363 "
+                >
+                  Blog
+                </a>
+                <p className="card-text text-white">Submission:</p>
+                <p className="card-text text-white">Bookmark:</p>
+                <Link to="/ProblemSet">
+                  <button className="btn btn-primary m-3 w-64">
+                    Visit ProblemSet
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div>{/* To add some kind of reminder or Calender here */}</div>
+        </div>
+
+        <div>
+          <div className="container marketing relative mt-[500px]">
+            <div className="row">
+              <div className="col-lg-4">
+                <img
+                  src={pfp}
+                  className="bd-placeholder-img rounded-circle w-[140px] h-[140px] ml-[155px]"
+                ></img>
+                <h2 className="fw-normal m-3 text-white">Heading</h2>
+                <p className="text-white">
+                  Some representative placeholder content for the three columns
+                  of text below the carousel. This is the first column.
+                </p>
+                <p>
+                  <a className="btn btn-primary mt-[25px] mb-[25px]" href="#">
+                    View details &raquo;
+                  </a>
+                </p>
+              </div>
+
+              <div className="col-lg-4">
+                <img
+                  src={pfp}
+                  className="bd-placeholder-img rounded-circle w-[140px] h-[140px] ml-[155px]"
+                ></img>
+                <h2 className="fw-normal m-3 text-white">Heading</h2>
+                <p className="text-white">
+                  Some representative placeholder content for the three columns
+                  of text below the carousel. This is the first column.
+                </p>
+                <p>
+                  <a className="btn btn-primary mt-[25px] mb-[25px]" href="#">
+                    View details &raquo;
+                  </a>
+                </p>
+              </div>
+
+              <div className="col-lg-4">
+                <img
+                  src={pfp}
+                  className="bd-placeholder-img rounded-circle w-[140px] h-[140px] ml-[155px]"
+                ></img>
+                <h2 className="fw-normal m-3 text-white">Heading</h2>
+                <p className="text-white">
+                  Some representative placeholder content for the three columns
+                  of text below the carousel. This is the first column.
+                </p>
+                <p>
+                  <a className="btn btn-primary mt-[25px] mb-[25px]" href="#">
+                    View details &raquo;
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="container bg-black h-64 font-bold">
+          <div className="container p-4 bg-black mt-3 mx-auto flex justify-center space-x-4">
+            <Link to="/">
+              <p className="p-[19px] text-white">Home</p>
+            </Link>
+            {/* <p className="p-[19px] text-white">Home</p> */}
+            <p className="p-[19px] text-white">Features</p>
+            <p className="p-[19px] text-white">FAQ</p>
+            <p className="p-[19px] text-white">ContactUs</p>
+          </div>
+          <div className="container p-4 bg-black mt-24 text-center text-white">
+            © 2024 Company, Inc
+          </div>
+        </div>
+
+        {popup && <LoggingPopupLayout popup={popup} setpopup={setpopup} />}
+      </div>
+    </>
+  );
+};
+
+export default Hero;

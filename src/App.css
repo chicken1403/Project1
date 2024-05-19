@@ -1,0 +1,103 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+  /* padding: 2rem; */
+  text-align: center;
+}
+.dropdown li{
+  font-weight: bold;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.gutter {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 2px !important;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+.gutter:hover {
+  background-color: #0a84ff;
+  opacity: 1;
+}
+
+.gutter .gutter-horizontal {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==");
+  cursor: col-resize;
+}
+.gutter {
+  background-color: rgb(209, 213, 219);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  opacity: 0;
+}
+
+.gutter .gutter-vertical {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=");
+  cursor: row-resize;
+}
+
+code {
+  border-radius: 5px;
+  border-width: 1px;
+  font-family: sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1rem;
+  padding: 0.125rem;
+  letter-spacing: 1px;
+  white-space: pre-wrap;
+  background-color: hsla(0, 0%, 58%, 0.07);
+  border-color: rgba(247, 250, 255, 0.12);
+  color: black;
+}
+
+.example-card pre {
+  background-color: hsla(0, 0%, 0%, 0.104);
+  border-radius: 0.5rem;
+  color: rgb(58, 58, 58);
+  font-size: 0.98rem;
+  line-height: 1.25rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  white-space: pre-wrap;
+}
+.example-card pre strong {
+  color: black;
+  font-size: 1rem;
+}
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #c7c7c7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7b7a7a;
+}
