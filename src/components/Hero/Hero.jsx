@@ -5,6 +5,7 @@ import Img from "../../assets/code9.png";
 import pfp from "../../assets/pfp.jpg";
 import Navbar from "../Header/Navbar";
 import LoggingPopupLayout from "../Auth/SigninLayout";
+import Calendar from "./calendar.jsx";
 
 const Hero = () => {
   // State for popup
@@ -51,7 +52,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex p-4 m-2 relative">
+        <div className="flex p-4 m-2 relative bg-black">
           <div className="p-2">
             <div className="card" style={{ width: "25rem", height: "150px" }}>
               <img src={pfp} className="card-img-top" alt="..." />
@@ -73,11 +74,17 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div>{/* To add some kind of reminder or Calender here */}</div>
+
+          <div className="bg-black">
+            <button className="btn btn-primary m-3 w-64">
+              Upcoming Contests
+            </button>
+            <Calendar />
+          </div>
         </div>
 
         <div>
-          <div className="container marketing relative mt-[500px]">
+          <div className="container marketing relative mt-[100px]">
             <div className="row">
               <div className="col-lg-4">
                 <img
