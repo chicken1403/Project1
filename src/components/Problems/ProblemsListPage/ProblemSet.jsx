@@ -18,7 +18,7 @@ const ProblemSet = () => {
       <Navbar pagination={false} />
 
       {/* table */}
-      <div className=" hero flex border items-center flex-col h-[93.5vh] bg-base-300 pt-8 bg-black">
+      <div className=" hero flex border items-center flex-col h-[250vh] bg-base-300 pt-8 bg-black">
         <div className="font-bold text-5xl font-serif mb-8 mt-4 text-gray-600">
           Problem Set
         </div>
@@ -57,7 +57,7 @@ const ProblemSet = () => {
 
                   <div className="w-2/5 font-semibold pl-2">
                     {problem.name.difficulty === "Easy" && (
-                      <p className="w-full text-white ">
+                      <p className="w-full text-green-500 ">
                         {problem.name.difficulty}
                       </p>
                     )}
@@ -67,7 +67,7 @@ const ProblemSet = () => {
                       </p>
                     )}
                     {problem.name.difficulty === "Hard" && (
-                      <p className="w-full text-white">
+                      <p className="w-full text-red-500">
                         {problem.name.difficulty}
                       </p>
                     )}
