@@ -101,4 +101,4 @@ const ThemeToggle = () => {
 
 ## Credits
 
-This project was built by Manas Kumar Sinha and Rahul Singh as a part of Even Semester Project by coding Club IIT Guwahati. </br>
+This project was built by Manas Kumar Sinha, Rahul Singh and Rishi Kawa as a part of Even Semester Project by coding Club IIT Guwahati. </br>
