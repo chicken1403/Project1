@@ -6,6 +6,17 @@
 
 This project is a clone of LeetCode built using React. It allows users to solve coding problems and test their solutions against provided test cases.
 
+## Live Website Demonstration
+1. Landing Page
+![Screenshot 2024-06-27 094114](https://github.com/chicken1403/Project1/assets/165024679/ac731951-f596-4706-85db-2e8f1d13a88d)
+2. Profile and Calender
+![Screenshot 2024-06-27 094136](https://github.com/chicken1403/Project1/assets/165024679/264f2f24-c545-4629-9ece-4ebd46eb1391)
+3. Problem Set Page
+![Screenshot 2024-06-27 094155](https://github.com/chicken1403/Project1/assets/165024679/d6ffa407-43c1-4ee4-a07c-8e918c77e0b7)
+4. Coding Area
+![Screenshot 2024-06-27 094212](https://github.com/chicken1403/Project1/assets/165024679/00d99494-9001-4300-97d6-4e3d609fd601)
+
+
 ## React Concepts Used
 
 ### 1. Context API
