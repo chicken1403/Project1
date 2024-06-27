@@ -97,7 +97,6 @@ const ThemeToggle = () => {
 1. Clone the repository.
 2. Install dependencies: `npm install`.
 3. Start the development server: `npm start`.
-4. Access the application in your browser at [EliteCode](https://65c667661fffc0255fbcea4b--steady-platypus-d0a662.netlify.app/).
 
 ## Credits
 
