@@ -1,8 +1,5 @@
 #  [EliteCode](https://65c667661fffc0255fbcea4b--steady-platypus-d0a662.netlify.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
----
-
 # React LeetCode Clone
 
 ## Description
